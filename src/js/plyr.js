@@ -3068,8 +3068,8 @@
             // Captions
             _proxyListener(plyr.buttons.captions, 'click', config.listeners.captions, _toggleCaptions);
 
-            // Seek tooltip
-            _on(plyr.progress.container, 'mouseenter mouseleave mousemove', _updateSeekTooltip);
+            // Seek tooltip注释滑块拖动功能
+            //_on(plyr.progress.container, 'mouseenter mouseleave mousemove', _updateSeekTooltip);
 
             // Toggle controls visibility based on mouse movement
             if (config.hideControls) {
@@ -3148,7 +3148,8 @@
             });
 
             // Check for buffer progress
-            _on(plyr.media, 'progress playing', _updateProgress);
+            //注释进度条 by fangke
+            //_on(plyr.media, 'progress playing', _updateProgress);
 
             // Handle native mute
             _on(plyr.media, 'volumechange', _updateVolume);
